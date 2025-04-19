@@ -36,8 +36,8 @@ namespace Ecommerce.Admin
             cmd = new SqlCommand("Category_Crud", con);
             cmd.Parameters.AddWithValue("@Action", "GETALL");
             cmd.CommandType = CommandType.StoredProcedure;
-            sda= new SqlDataAdapter(cmd);
-            dt= new DataTable();
+            sda = new SqlDataAdapter(cmd);
+            dt = new DataTable();
             sda.Fill(dt);
             rCategory.DataSource = dt;
             rCategory.DataBind();
@@ -96,6 +96,8 @@ namespace Ecommerce.Admin
                 if (fuCategoryImage.HasFile)
                 {
                     imagePreview.ImageUrl = imagePath;
+                    getCategories();
+                    clear();
                 }
 
                 if (categoryId == 0)
@@ -134,6 +136,70 @@ namespace Ecommerce.Admin
             cbIsActive.Checked = false;
             hfCategoryId.Value = "0";
             imagePreview.ImageUrl = string.Empty;
+            btnAddOrUpdate.Text = "Add"; // Reset button text
+            imagePreview.Visible = false; // Hide preview when clearing
+        }
+
+        protected void rCategory_ItemCommand(object source, RepeaterCommandEventArgs e)
+        {
+            lblMsg.Visible = false;
+            if (e.CommandName == "edit")
+            {
+                con = new SqlConnection(Utils.getConnection());
+                cmd = new SqlCommand("Category_Crud", con);
+                cmd.Parameters.AddWithValue("@Action", "GETBYID");
+                cmd.Parameters.AddWithValue("@CategoryId", e.CommandArgument);
+                cmd.CommandType = CommandType.StoredProcedure;
+                sda = new SqlDataAdapter(cmd);
+                dt = new DataTable();
+                sda.Fill(dt);
+
+                txtCategoryName.Text = dt.Rows[0]["CategoryName"].ToString();
+                cbIsActive.Checked = Convert.ToBoolean(dt.Rows[0]["IsActive"]);
+
+                // Fix image preview
+                string imageUrl = dt.Rows[0]["CategoryImageUrl"].ToString();
+                if (string.IsNullOrEmpty(imageUrl))
+                {
+                    imagePreview.ImageUrl = ResolveUrl("~/Images/No_image.png");
+                }
+                else
+                {
+                    imagePreview.ImageUrl = ResolveUrl("~/" + imageUrl);
+                }
+
+                imagePreview.Visible = true;
+                hfCategoryId.Value = dt.Rows[0]["CategoryId"].ToString();
+                btnAddOrUpdate.Text = "Update";
+            }
+            else if (e.CommandName == "delete")
+            {
+                con = new SqlConnection(Utils.getConnection());
+                cmd = new SqlCommand("Category_Crud", con);
+                cmd.Parameters.AddWithValue("@Action", "DELETE");
+                cmd.Parameters.AddWithValue("@CategoryId", e.CommandArgument);
+                cmd.CommandType = CommandType.StoredProcedure;
+                try
+                {
+                    con.Open();
+                    cmd.ExecuteNonQuery();
+                    lblMsg.Visible = true;
+                    lblMsg.Text = " Category deleted successfully! ";
+                    lblMsg.CssClass = "alert alert-success";
+                    getCategories();
+
+                }
+                catch (Exception ex)
+                {
+                    lblMsg.Visible = true;
+                    lblMsg.Text = "Error~ " + ex.Message;
+                    lblMsg.CssClass = "alert alert danger";
+                }
+                finally
+                {
+                    con.Close();
+                }
+            }
         }
     }
 }
