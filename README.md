@@ -53,4 +53,4 @@ Building Almeem Fashion involves working with essential concepts and tools in we
 To get started with **Almeem Fashion**, clone this repository:
 
 ```bash
-[git clone https://github.com/Mostafaessam7/Almeem](https://github.com/AhmedGomaa15/Ecommerce.git)
+[git clone https://github.com/AhmedGomaa15/Ecommerce)
