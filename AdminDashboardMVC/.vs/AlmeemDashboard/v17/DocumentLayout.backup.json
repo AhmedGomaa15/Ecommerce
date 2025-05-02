@@ -1,0 +1,70 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Ahmed Gomaa\\Almeem-Fashion\\AdminDashboardMVC\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3C39334F-06E6-4ACB-88AA-9E29F92D15A1}|AlmeemDashboard\\AlmeemDashboard.csproj|c:\\users\\ahmed gomaa\\almeem-fashion\\admindashboardmvc\\almeemdashboard\\models\\ordertoreturndto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C39334F-06E6-4ACB-88AA-9E29F92D15A1}|AlmeemDashboard\\AlmeemDashboard.csproj|solutionrelative:almeemdashboard\\models\\ordertoreturndto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C39334F-06E6-4ACB-88AA-9E29F92D15A1}|AlmeemDashboard\\AlmeemDashboard.csproj|c:\\users\\ahmed gomaa\\almeem-fashion\\admindashboardmvc\\almeemdashboard\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C39334F-06E6-4ACB-88AA-9E29F92D15A1}|AlmeemDashboard\\AlmeemDashboard.csproj|solutionrelative:almeemdashboard\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C39334F-06E6-4ACB-88AA-9E29F92D15A1}|AlmeemDashboard\\AlmeemDashboard.csproj|c:\\users\\ahmed gomaa\\almeem-fashion\\admindashboardmvc\\almeemdashboard\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C39334F-06E6-4ACB-88AA-9E29F92D15A1}|AlmeemDashboard\\AlmeemDashboard.csproj|solutionrelative:almeemdashboard\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmed Gomaa\\Almeem-Fashion\\AdminDashboardMVC\\AlmeemDashboard\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "AlmeemDashboard\\Models\\Order.cs",
+              "ToolTip": "C:\\Users\\Ahmed Gomaa\\Almeem-Fashion\\AdminDashboardMVC\\AlmeemDashboard\\Models\\Order.cs",
+              "RelativeToolTip": "AlmeemDashboard\\Models\\Order.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAQwAgAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T12:52:33.112Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OrderToReturnDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmed Gomaa\\Almeem-Fashion\\AdminDashboardMVC\\AlmeemDashboard\\Models\\OrderToReturnDto.cs",
+              "RelativeDocumentMoniker": "AlmeemDashboard\\Models\\OrderToReturnDto.cs",
+              "ToolTip": "C:\\Users\\Ahmed Gomaa\\Almeem-Fashion\\AdminDashboardMVC\\AlmeemDashboard\\Models\\OrderToReturnDto.cs",
+              "RelativeToolTip": "AlmeemDashboard\\Models\\OrderToReturnDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T12:51:30.306Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmed Gomaa\\Almeem-Fashion\\AdminDashboardMVC\\AlmeemDashboard\\Program.cs",
+              "RelativeDocumentMoniker": "AlmeemDashboard\\Program.cs",
+              "ToolTip": "C:\\Users\\Ahmed Gomaa\\Almeem-Fashion\\AdminDashboardMVC\\AlmeemDashboard\\Program.cs",
+              "RelativeToolTip": "AlmeemDashboard\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T12:50:28.232Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
